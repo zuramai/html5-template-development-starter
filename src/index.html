@@ -1,0 +1,19 @@
+{% set title = 'Home' %}
+{% set filename = 'index.html' %}
+
+{% extends 'src/layouts/main.html' %}
+
+{% block content %}
+
+<div class="content">
+    <div class="text-center mt-5">
+        <h1 class="text-center">Kickstart Your HTML5 Template</h1>
+        <p>Powered by Bootstrap</p>
+    </div>
+    
+    {% if isDev %}
+    {% else %}
+    {% endif %}
+</div>
+
+{% endblock %}
