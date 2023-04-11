@@ -1,0 +1,61 @@
+{% set title = 'competitions' %}
+{% set filename = 'index.html' %}
+
+{% extends 'src/layouts/main.html' %}
+
+{% block content %}
+
+
+<main class="container py-5">
+
+    <header class="mb-4 d-flex align-items-center justify-content-between">
+        <h3 class="mb-0">Competition List</h3>
+        <a href="competition-create.html">Create a competition</a>
+    </header>
+
+    <section class="competition-list">
+        <a href="competition-detail.html">
+            <article class="competition-box card mb-3">
+                <div class="card-body">
+                    <h4>Singapore Cup</h4>
+                    <p class="text-muted mb-0">
+                        July 1, 2023, 64 Teams
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="competition-detail.html">
+            <article class="competition-box card mb-3">
+                <div class="card-body">
+                    <h4>Indonesia Cup</h4>
+                    <p class="text-muted mb-0">
+                        July 1, 2023, 16 Teams
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="competition-detail.html">
+            <article class="competition-box card mb-3">
+                <div class="card-body">
+                    <h4>Malay Cup</h4>
+                    <p class="text-muted mb-0">
+                        August 1, 2023, 8 Teams
+                    </p>
+                </div>
+            </article>
+        </a>
+        <a href="competition-detail.html">
+            <article class="competition-box card mb-3">
+                <div class="card-body">
+                    <h4>Asian Cup</h4>
+                    <p class="text-muted mb-0">
+                        October 1, 2023, 4 Teams
+                    </p>
+                </div>
+            </article>
+        </a>
+    </section>
+
+</main>
+
+{% endblock %}

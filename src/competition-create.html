@@ -1,0 +1,92 @@
+{% set title = 'Overview - Singapore Cup' %}
+{% set filename = 'index.html' %}
+
+{% extends 'src/layouts/main.html' %}
+
+{% block content %}
+
+<main class="container py-5">
+    <header class="mb-4 d-flex align-items-center justify-content-between">
+        <h3 class="mb-0">Create a competition</h3>
+    </header>
+
+    <section class="form">
+        <div class="row">
+            <div class="col-md-4">
+                <form action="" method="POST">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="name">Competition Name</label>
+                            <input type="text" class="form-control" id="name" name="name" value=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="countries">Allowed Countries</label>
+                                <select multiple name="countries[]" id="countries" class="form-control">
+                                    <option>
+                                        Cambodia
+                                    </option>
+                                    <option>
+                                        Indonesia
+                                    </option>
+                                    <option>
+                                        Malaysia
+                                    </option>
+                                    <option>
+                                        Philippines
+                                    </option>
+                                    <option>
+                                        Singapore
+                                    </option>
+                                    <option>
+                                        Thailand
+                                    </option>
+                                    <option>
+                                        Vietnam
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="start">Date Start</label>
+                                <input type="date" class="form-control" id="start" name="start" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="max_teams">Max Teams</label>
+                                <input type="number" class="form-control" id="max_teams" name="max_teams" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="total_groups">Total Groups</label>
+                                <input type="number" class="form-control" id="total_groups" name="total_groups" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-8">
+                            <button class="btn btn-primary w-100" type="submit">Save</button>
+                        </div>
+                        <div class="col-4">
+                            <a href="competition-index.html" class="btn bg-light text-primary w-100" type="submit">Back</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}

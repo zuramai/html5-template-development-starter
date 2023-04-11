@@ -1,19 +1,32 @@
-{% set title = 'Home' %}
+
+{% set title = 'Overview - Singapore Cup' %}
 {% set filename = 'index.html' %}
 
 {% extends 'src/layouts/main.html' %}
 
 {% block content %}
+<main class="container py-5">
 
-<div class="content">
-    <div class="text-center mt-5">
-        <h1 class="text-center">Kickstart Your HTML5 Template</h1>
-        <p>Powered by Bootstrap</p>
-    </div>
-    
-    {% if isDev %}
-    {% else %}
-    {% endif %}
-</div>
+    <section class="login-section row justify-content-center">
+        <div class="col-md-4">
+            <h4 class="mb-3 text-center">Administrator Platform</h4>
+            <hr class="mb-4">
+            <div class="login-box">
+                <form method="GET">
+                    <input type="hidden" name="_token" value="hyC4s5Ateya4He5phyE2w1ZeXtl8BOjDGXr4GY3S">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="username" placeholder="Username" name="username" value="" autofocus/>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="password" name="password" value=""/>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary w-100" type="submit" id="login" href="competition-index.html">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
 
 {% endblock %}
