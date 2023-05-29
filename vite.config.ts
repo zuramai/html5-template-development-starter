@@ -28,7 +28,7 @@ const getVariables = (mode) => {
     Object.keys(files).forEach((filename) => {
         if(filename.includes('layouts')) filename = `layouts/${filename}`
         variables[filename + '.html'] = {
-            web_title: "Your App",
+            web_title: "ASEAN Football Competition",
             isDev: mode === 'development'
         }
     })
